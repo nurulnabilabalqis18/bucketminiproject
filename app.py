@@ -5,9 +5,6 @@ from dotenv import load_dotenv
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
 
-client = MongoClient('mongodb://test:sparta@ac-h3sofl7-shard-00-00.yyb72uo.mongodb.net:27017,ac-h3sofl7-shard-00-01.yyb72uo.mongodb.net:27017,ac-h3sofl7-shard-00-02.yyb72uo.mongodb.net:27017/?ssl=true&replicaSet=atlas-10b32e-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0')
-db = client.dbsparta
-
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
